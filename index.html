@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>GPA-Calculator</title>
+</head>
+<body>
+    <div class="ultimate-container">
+        <div class="heading">
+            <span class="h1">GPA-Calculator </span>
+            <span class="h1 h11">(sem-5 exclusive &#9996;)</span>
+        </div>
+        <div class="outercontainer">
+            <div class="container">
+                <div class="main-box">
+                    <div class="subox-1 head-sub">
+                        <label >Course name</label>
+                        <label >Grade</label>
+                    </div>
+                    <div class="subox-1">
+                        <label for="antn">EC5501-Antennas and wave propagation</label>
+                        <select name="antn" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                    <div class="subox-1">
+                        <label for="digi">EC5502-Digital communication</label>
+                        <select name="digi" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                    <div class="subox-1">
+                        <label for="mpmc">EC5551-Microprocessors and microcontrollers</label>
+                        <select name="mpmc" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                    <div class="subox-1">
+                        <label for="cse">EC5503-Control system engineering</label>
+                        <select name="cse" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                    <div class="subox-1">
+                        <label for="profel">PEC1-Professional elective</label>
+                        <select name="profel" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                    <div class="subox-1">
+                        <label for="pom">MG5451-Principles of management</label>
+                        <select name="pom" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                    <div class="subox-1">
+                        <label for="mpmclab">EC5561-Microcontroller laboratory</label>
+                        <select name="mpmclab" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                    <div class="subox-1">
+                        <label for="digilab">EC5511-Digital communication laboratory</label>
+                        <select name="digilab" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                    <div class="subox-1">
+                        <label for="sumint">EC5512-Summer internship</label>
+                        <select name="sumint" >
+                            <option value="O">O</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="RA">RA</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button onclick="CalculateGpa(objtest,objcred,objcredpoint)">Calculate</button>
+            </div>
+            <div class="result">
+                
+            </div>
+        </div>
+
+        
+    </div>
+    <footer><h3>&copy; @rumaan-2023</h3></footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>

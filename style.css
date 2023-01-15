@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ultimate-container{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    min-height: 800px;
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    background-image: url('pic.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    gap: 4rem;
+
+}
+.ultimate-container .heading .h1{
+    color: #ffff;
+    font-size: 35px;
+    font-weight:600;
+    letter-spacing: 3px;
+}
+.ultimate-container .container{
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+    background-color: #ffff;
+    padding: 1.5rem;
+
+}
+.ultimate-container .container .main-box{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.ultimate-container .container .main-box .subox-1{
+    display: flex;
+    justify-content: space-between;
+}
+.ultimate-container .container .main-box .head-sub label{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.ultimate-container .container .main-box .subox-1 select{
+    outline: none;
+    padding: 6px;
+    font-family:'Poppins', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.ultimate-container .outercontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.ultimate-container .outercontainer .button-container button{
+    padding: 10px;
+    font-family:'Poppins', sans-serif;
+    background-color: #2C74B3;
+    color: #ffff;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 300ms ease-in;
+}
+.ultimate-container .outercontainer .button-container button:hover{
+    transform: scale(1.11);
+    background-color: #ffff;
+    color: #2C74B3;
+    border: 1px solid gray;
+}
+.ultimate-container .outercontainer .result{
+    height: 38px;
+}
+.ultimate-container .outercontainer .result h1{
+    font-size: 24px;
+    font-family:'Poppins', sans-serif;
+
+}
+footer{
+    width: 100%;
+    padding: 6px;
+    background-color: #2C74B3;
+    color: #ffff;
+    font-family:'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+
+}
+/* ------media queries-responsive-------- */
+
+@media only screen and (max-width: 1025px) {
+    .ultimate-container .heading .h1{
+        font-size: 24px;
+    }
+    .ultimate-container .heading{
+        position: sticky;
+        z-index: 22;
+    }
+    .ultimate-container .container .main-box{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .ultimate-container .heading .h1{
+        font-size: 20px;
+    }
+    .ultimate-container .container{
+        padding: 1rem;
+    
+    }
+    .ultimate-container .container .main-box{
+        width: 100%;
+        gap: 0.6rem;
+    }
+    .ultimate-container .container .main-box .subox-1 label{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 485px) {
+    .ultimate-container .container .main-box .subox-1 label{
+        font-size: 14px;
+    }
+    .ultimate-container .container .main-box .head-sub label{
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .ultimate-container .container{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .ultimate-container .heading .h1{
+        font-size: 1rem;
+    }
+    .ultimate-container{
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 410px){
+    .ultimate-container .heading .h11{
+        display: block;
+        text-align: center;
+    }
+    .ultimate-container{
+        background-size:cover;
+        gap: 1.5rem;
+    }
+    .ultimate-container .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+}
